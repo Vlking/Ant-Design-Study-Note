@@ -1,0 +1,7 @@
+Node.js安装
+1、下一步--->完成---->
+2、cmd----键入node -v出现node.js的版本，键入npm -v出现npm的版本，说明两者均已安装成功。
+配置：在e盘下创建node文件夹在里面创建Cache文件夹和Lib文件夹，然后odejs安装目录下的node_modules\npm下找到npmrc文件，并修改：prefix 指向Lib的目录，cache指向Cache目录
+3、在下面的系统变量中找到Path，点击编辑，在后面加入nodejs的安装目录，我这里就是D:\software\dev\nodeJS\
+然后打开cmd，输入node -v回车显示node版本，输入npm -v回车，显示npm版本，则表示node安装成功。
+在用户变量Path中，修改默认配置为刚刚设置的prefix路径。
