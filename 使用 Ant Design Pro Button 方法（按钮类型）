@@ -1,0 +1,19 @@
+import React from 'react';
+import { Button } from 'antd';
+
+// eslint-disable-next-line react/prefer-stateless-function
+class test1 extends React.Component{
+  render() {
+    return(
+      <div>
+        <Button type="primary">Primary</Button>
+        <Button>Default</Button>
+        <Button type="dashed">Dashed</Button>
+        <Button type="danger">Danger</Button>
+        <Button type="link">Link</Button>
+      </div>
+    )
+  }
+}
+export default test1;
+// 按钮有五种类型：主按钮、次按钮、虚线按钮、危险按钮和链接按钮。主按钮在同一个操作区域最多出现一次。
