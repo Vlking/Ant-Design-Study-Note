@@ -1,0 +1,18 @@
+import React from 'react';
+import { Icon } from 'antd';
+
+class test1 extends React.Component{
+  render() {
+    return(
+      <div>
+        <div className="icons-list">
+          <Icon type="smile" theme="twoTone" />
+          <Icon type="heart" theme="twoTone" twoToneColor="#eb2f96" />
+          <Icon type="check-circle" theme="twoTone" twoToneColor="#52c41a" />
+        </div>
+      </div>
+    )
+  }
+}
+export default test1;
+//可以通过设置 theme 属性为 twoTone 来渲染双色图标，并且可以设置主题色。
