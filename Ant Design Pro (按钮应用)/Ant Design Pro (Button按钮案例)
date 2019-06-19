@@ -1,0 +1,36 @@
+import React from 'react';
+import { Button } from 'antd';
+
+class test1 extends React.Component{
+  add = ()=>{
+    alert("最近我的公孙离被吊打")
+  }
+  render() {
+    return(
+      <div>
+        <Button type="default">按钮类型1</Button>
+        <Button type="dashed">按钮类型2</Button>
+        <Button type="primary">按钮类型3</Button>
+        <Button type="danger">按钮类型4</Button>
+        <Button type="link">按钮类型5</Button>
+        <br /><br />
+        <Button type="default" disabled={true}>按钮失效状态</Button>
+        <Button type="dashed" ghost={true}>按钮背景透明</Button>
+        <Button type="primary" loading={true}>按钮载入状态</Button>
+        <Button type="danger" icon={"down-square"}>按钮的图标类型</Button>
+        <Button type="link" href={'http://www.baidu.com'}>跳转地址</Button>
+        <br /><br />
+        <Button type="default" shape={"circle"}>圆型按钮</Button>
+        <Button type="dashed" shape={"round"}>椭圆形按钮</Button>
+        <Button type="primary" size={"small"}>小按钮</Button>
+        <Button type="danger" size={"large"}>大按钮</Button>
+        <Button type="link" target={"aa"}>target属性</Button>
+        <br /><br />
+        <Button type="default" onClick={()=>{this.add()}}>onClick事件</Button>
+        <Button type="dashed" block={true}>按钮类型2</Button>
+      </div>
+    )
+  }
+}
+export default test1;
+//Button案例
