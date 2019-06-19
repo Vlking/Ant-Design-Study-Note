@@ -1,0 +1,26 @@
+import React from 'react';
+import { Button } from 'antd';
+
+class test1 extends React.Component{
+  render() {
+    return(
+      <div>
+        <Button type="primary" ghost>
+          Primary
+        </Button>
+        <Button ghost>Default</Button>
+        <Button type="dashed" ghost>
+          Dashed
+        </Button>
+        <Button type="danger" ghost>
+          danger
+        </Button>
+        <Button type="link" ghost>
+          link
+        </Button>
+      </div>
+    )
+  }
+}
+export default test1;
+// 幽灵按钮将按钮的内容反色，背景变为透明，常用在有色背景上。
