@@ -1,0 +1,26 @@
+import React from 'react';
+import { Button } from 'antd';
+
+class test1 extends React.Component{
+  render() {
+    return(
+      <div>
+        <Button type="primary" block>
+          Primary
+        </Button>
+        <Button block>Default</Button>
+        <Button type="dashed" block>
+          Dashed
+        </Button>
+        <Button type="danger" block>
+          Danger
+        </Button>
+        <Button type="link" block>
+          Link
+        </Button>
+      </div>
+    )
+  }
+}
+export default test1;
+//通过设置 Button 的属性来产生不同的按钮样式，推荐顺序为：type -> shape -> size -> loading -> disabled。
