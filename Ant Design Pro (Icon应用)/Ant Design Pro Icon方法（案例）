@@ -1,0 +1,21 @@
+import React from 'react';
+import { Icon } from 'antd';
+
+class test1 extends React.Component{
+  render() {
+    return(
+      <div>
+        <div className="icons-list">
+          <Icon type="home" style={{ color: '#C82315' }} theme={'twoTone'} />
+          <Icon type="setting" theme="filled" />
+          <Icon type="smile" theme="outlined" spin={true}/>
+          <Icon type="sync" spin />
+          <Icon type="smile" rotate={180} />
+          <Icon type="loading" />
+        </div>
+      </div>
+    )
+  }
+}
+export default test1;
+//Icon案例
