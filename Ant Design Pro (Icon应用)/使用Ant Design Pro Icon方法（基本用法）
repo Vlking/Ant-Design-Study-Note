@@ -1,0 +1,19 @@
+import React from 'react';
+import { Icon } from 'antd';
+
+class test1 extends React.Component{
+  render() {
+    return(
+      <div>
+        <Icon type="home" />
+        <Icon type="setting" theme="filled" />
+        <Icon type="smile" theme="outlined" />
+        <Icon type="sync" spin />
+        <Icon type="smile" rotate={180} />
+        <Icon type="loading" />
+      </div>
+    )
+  }
+}
+export default test1;
+//使用 <Icon /> 标签声明组件，指定图标对应的 type 属性。可以通过 theme 属性来设置不同的主题风格的图标，也可以通过设置 spin 属性来实现动画旋转效果。
