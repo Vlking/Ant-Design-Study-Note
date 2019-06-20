@@ -1,0 +1,19 @@
+import React from 'react';
+import { Typography} from 'antd';
+const { Title } = Typography;
+class test1 extends React.Component{
+  render() {
+    return(
+      <div>
+        <Typography>
+          <Title>h1. Ant Design</Title>
+          <Title level={2}>h2. Ant Design</Title>
+          <Title level={3}>h3. Ant Design</Title>
+          <Title level={4}>h4. Ant Design</Title>
+        </Typography>
+      </div>
+    )
+  }
+}
+export default test1;
+//展示不同级别的标题
