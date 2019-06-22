@@ -1,0 +1,41 @@
+import React from 'react';
+import { Row, Col } from 'antd';
+import styles from './demo.less';
+
+class test1 extends React.Component{
+  render() {
+    return(
+      <div>
+        <Row>
+          <Col xs={{ span: 5, offset: 1 }} lg={{ span: 6, offset: 2 }} className = {styles.gutterbox}>
+            Col
+          </Col>
+          <Col xs={{ span: 11, offset: 1 }} lg={{ span: 6, offset: 2 }} className = {styles.colortwo}>
+            Col
+          </Col>
+          <Col xs={{ span: 5, offset: 1 }} lg={{ span: 6, offset: 2 }} className = {styles.gutterbox}>
+            Col
+          </Col>
+        </Row>
+      </div>
+    )
+  }
+}
+export default test1;
+// span pull push offset order 属性可以通过内嵌到 xs sm md lg xl xxl 属性中来使用。
+// 其中 xs={6} 相当于 xs={{ span: 6 }}。
+
+*********************************以下是Less代码**************************************
+
+.gutterbox {
+  background: #00a0e9;
+  padding: 5px 5px;
+  margin-top: 5px;
+  color: #ffffff;
+}
+.colortwo{
+  background: #2eabff;
+  padding: 5px 5px;
+  margin-top: 5px;
+  color: #ffffff;
+}
