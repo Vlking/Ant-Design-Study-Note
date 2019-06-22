@@ -1,0 +1,86 @@
+import React from 'react';
+import { Row, Col, Slider } from 'antd';
+import styles from './demo.less';
+
+class test1 extends React.Component{
+
+  gutters = {};
+  colCounts = {};
+  constructor() {
+    super();
+    this.state = {
+      gutterKey: 1,
+      colCountKey: 2,
+    };
+    [8, 16, 24, 32, 40, 48].forEach((value, i) => {
+      this.gutters[i] = value;
+    });
+    [2, 3, 4, 6, 8, 12].forEach((value, i) => {
+      this.colCounts[i] = value;
+    });
+  }
+
+  onGutterChange = gutterKey => {
+    this.setState({ gutterKey });
+  };
+  onColCountChange = colCountKey => {
+    this.setState({ colCountKey });
+  };
+
+
+  render() {
+    const { gutterKey, colCountKey } = this.state;
+    const cols = [];
+    const colCount = this.colCounts[colCountKey];
+    let colCode = '';
+    for (let i = 0; i < colCount; i++) {
+      cols.push(
+        <Col key={i.toString()} span={24 / colCount}>
+          <div className={styles.gutterbox} style={{width:'auto'}}>Column</div>
+        </Col>,
+      );
+      colCode += `  <Col span={${24 / colCount}} />\n`;
+    }
+    return(
+      <div>
+        <div style={{ marginBottom: 16 }}>
+          <span style={{ marginRight: 6 }}>边距(px): </span>
+          <div style={{ width: '50%' }}>
+            <Slider
+              min={0}
+              max={Object.keys(this.gutters).length - 1}
+              value={gutterKey}
+              onChange={this.onGutterChange}
+              marks={this.gutters}
+              step={null}
+            />
+          </div>
+          <span style={{ marginRight: 6 }}>分删格总数:</span>
+          <div style={{ width: '50%' }}>
+            <Slider
+              min={0}
+              max={Object.keys(this.colCounts).length - 1}
+              value={colCountKey}
+              onChange={this.onColCountChange}
+              marks={this.colCounts}
+              step={null}
+            />
+          </div>
+        </div>
+        <Row gutter={this.gutters[gutterKey]}>{cols}</Row>
+        <pre>{`<Row gutter={${this.gutters[gutterKey]}}>\n${colCode}</Row>`}</pre>
+      </div>
+    )
+  }
+}
+export default test1;
+// 可以简单配置几种等分栅格和间距。
+
+***********************************以下是less代码******************************************
+
+.gutterbox {
+  background: #00a0e9;
+  padding: 5px 5px;
+  margin-top: 5px;
+  color: #ffffff;
+}
