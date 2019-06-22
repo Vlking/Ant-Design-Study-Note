@@ -1,0 +1,77 @@
+import React from 'react';
+import { Row, Col } from 'antd';
+import styles from './demo.less';
+
+class test1 extends React.Component{
+  render() {
+    const DemoBox = props => <p className={`height-${props.value}`}>{props.children}</p>;
+    return(
+      <div>
+        <p>所有盒子向上对齐</p>
+        <Row type="flex" justify="center" align="top" style={{height:'200px',background:'#FFFFFF'}}>
+          <Col span={4} className={styles.gutterbox} style={{height:'140px'}}>
+            <DemoBox value={100}>col-4</DemoBox>
+          </Col>
+          <Col span={4} className={styles.colortwo} style={{height:'100px'}}>
+            <DemoBox value={50}>col-4</DemoBox>
+          </Col>
+          <Col span={4} className={styles.gutterbox} style={{height:'40px'}}>
+            <DemoBox value={120}>col-4</DemoBox>
+          </Col>
+          <Col span={4} className={styles.colortwo} style={{height:'120px'}}>
+            <DemoBox value={80}>col-4</DemoBox>
+          </Col>
+        </Row>
+
+        <p>所有盒子垂直居中对齐</p>
+        <Row type="flex" justify="space-around" align="middle" style={{height:'200px',background:'#FFFFFF'}}>
+          <Col span={4} className = {styles.gutterbox} style={{height:'140px'}}>
+            <DemoBox value={100}>col-4</DemoBox>
+          </Col>
+          <Col span={4} className = {styles.colortwo} style={{height:'100px'}}>
+            <DemoBox value={50}>col-4</DemoBox>
+          </Col>
+          <Col span={4} className = {styles.gutterbox} style={{height:'40px'}}>
+            <DemoBox value={120}>col-4</DemoBox>
+          </Col>
+          <Col span={4} className = {styles.colortwo} style={{height:'80px'}}>
+            <DemoBox value={80}>col-4</DemoBox>
+          </Col>
+        </Row>
+
+        <p>所有盒子向下对齐</p>
+        <Row type="flex" justify="space-between" align="bottom" style={{height:'200px',background:'#FFFFFF'}}>
+          <Col span={4} className = {styles.gutterbox} style={{height:'150px'}}>
+            <DemoBox value={100}>col-4</DemoBox>
+          </Col>
+          <Col span={4} className = {styles.colortwo} style={{height:'110px'}}>
+            <DemoBox value={50}>col-4</DemoBox>
+          </Col>
+          <Col span={4} className = {styles.gutterbox} style={{height:'50px'}}>
+            <DemoBox value={120}>col-4</DemoBox>
+          </Col>
+          <Col span={4} className = {styles.colortwo} style={{height:'80px'}}>
+            <DemoBox value={80}>col-4</DemoBox>
+          </Col>
+        </Row>
+      </div>
+    )
+  }
+}
+export default test1;
+// Flex 子元素垂直对齐。
+
+********************************************以下是Less代码****************************************************
+
+.gutterbox {
+  background: #00a0e9;
+  padding: 5px 5px;
+  margin-top: 5px;
+  color: #ffffff;
+}
+.colortwo{
+  background: #2eabff;
+  padding: 5px 5px;
+  margin-top: 5px;
+  color: #ffffff;
+}
