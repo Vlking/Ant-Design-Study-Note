@@ -1,28 +1,45 @@
 import React from 'react';
 import { Row, Col } from 'antd';
+import styles from './demo.less';
 
 class test1 extends React.Component{
   render() {
     return(
       <div>
-        <Row>
-          <Col span={12}>col-12</Col>
-          <Col span={12}>col-12</Col>
+        <Row className={styles.antrow}>
+          <Col span={12} className={styles.gutterbox}>col-12</Col>
+          <Col span={12} className={styles.colortwo}>col-12</Col>
         </Row>
-        <Row>
-          <Col span={8}>col-8</Col>
-          <Col span={8}>col-8</Col>
-          <Col span={8}>col-8</Col>
+        <Row className={styles.antrow}>
+          <Col span={8} className={styles.gutterbox}>col-8</Col>
+          <Col span={8} className={styles.colortwo}>col-8</Col>
+          <Col span={8} className={styles.gutterbox}>col-8</Col>
         </Row>
-        <Row>
-          <Col span={6}>col-6</Col>
-          <Col span={6}>col-6</Col>
-          <Col span={6}>col-6</Col>
-          <Col span={6}>col-6</Col>
+        <Row className={styles.antrow}>
+          <Col span={6} className={styles.colortwo}>col-6</Col>
+          <Col span={6} className={styles.gutterbox}>col-6</Col>
+          <Col span={6} className={styles.gutterbox}>col-6</Col>
+          <Col span={6} className={styles.colortwo}>col-6</Col>
         </Row>
       </div>
     )
   }
 }
 export default test1;
-//从堆叠到水平排列。使用单一的一组 Row 和 Col 栅格组件，就可以创建一个基本的栅格系统，所有列（Col）必须放在 Row 内。
+//从堆叠到水平排列。
+// 使用单一的一组 Row 和 Col 栅格组件，就可以创建一个基本的栅格系统，所有列（Col）必须放在 Row 内。
+
+****************************************以下是Less代码*******************************************
+
+.gutterbox {
+  background: #00a0e9;
+  padding: 5px 5px;
+  margin-top: 5px;
+  color: #ffffff;
+}
+.colortwo{
+  background: #2eabff;
+  padding: 5px 5px;
+  margin-top: 5px;
+  color: #ffffff;
+}
