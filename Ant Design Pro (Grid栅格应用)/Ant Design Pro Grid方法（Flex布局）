@@ -1,0 +1,70 @@
+import React from 'react';
+import { Row, Col } from 'antd';
+import styles from './demo.less';
+
+class test1 extends React.Component{
+  render() {
+    return(
+      <div>
+        <p>sub-element 靠左居中</p>
+        <Row type="flex" justify="start">
+          <Col span={4} className={styles.gutterbox}>col-4</Col>
+          <Col span={4} className={styles.colortwo}>col-4</Col>
+          <Col span={4} className={styles.gutterbox}>col-4</Col>
+          <Col span={4} className={styles.colortwo}>col-4</Col>
+        </Row>
+
+        <p>sub-element 靠中居中</p>
+        <Row type="flex" justify="center">
+          <Col span={4} className={styles.gutterbox}>col-4</Col>
+          <Col span={4} className={styles.colortwo}>col-4</Col>
+          <Col span={4} className={styles.gutterbox}>col-4</Col>
+          <Col span={4} className={styles.colortwo}>col-4</Col>
+        </Row>
+
+        <p>sub-element 靠右居中</p>
+        <Row type="flex" justify="end">
+          <Col span={4} className={styles.gutterbox}>col-4</Col>
+          <Col span={4} className={styles.colortwo}>col-4</Col>
+          <Col span={4} className={styles.gutterbox}>col-4</Col>
+          <Col span={4} className={styles.colortwo}>col-4</Col>
+        </Row>
+
+        <p>sub-element 按宽度居中</p>
+        <Row type="flex" justify="space-between">
+          <Col span={4} className={styles.gutterbox}>col-4</Col>
+          <Col span={4} className={styles.colortwo}>col-4</Col>
+          <Col span={4} className={styles.gutterbox}>col-4</Col>
+          <Col span={4} className={styles.colortwo}>col-4</Col>
+        </Row>
+
+        <p>sub-element 充满居中</p>
+        <Row type="flex" justify="space-around">
+          <Col span={4} className={styles.gutterbox}>col-4</Col>
+          <Col span={4} className={styles.colortwo}>col-4</Col>
+          <Col span={4} className={styles.gutterbox}>col-4</Col>
+          <Col span={4} className={styles.colortwo}>col-4</Col>
+        </Row>
+      </div>
+    )
+  }
+}
+export default test1;
+//Flex 布局基础。
+// 使用 row-flex 定义 flex 布局，其子元素根据不同的值 start,center,end,space-between,space-around，分别定义其在父节点里面的排版方式。
+
+*************************以下是less代码******************************
+
+.gutterbox {
+  background: #00a0e9;
+  padding: 5px 5px;
+  margin-top: 5px;
+  color: #ffffff;
+}
+.colortwo{
+  background: #2eabff;
+  padding: 5px 5px;
+  margin-top: 5px;
+  color: #ffffff;
+}
+
