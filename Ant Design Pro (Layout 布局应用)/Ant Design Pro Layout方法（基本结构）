@@ -1,0 +1,71 @@
+import React from 'react';
+import { Layout } from 'antd';
+import styles from './demo.less';
+
+const { Header, Footer, Sider, Content } = Layout;
+
+class test1 extends React.Component{
+  render() {
+    return(
+      <div>
+        <Layout>
+          <Header className={styles.gutterbox}>Header</Header>
+          <Content className={styles.colortwo}>Content</Content>
+          <Footer className={styles.gutterbox}>Footer</Footer>
+        </Layout>
+        <br />
+        <Layout>
+          <Header className={styles.gutterbox}>Header</Header>
+          <Layout>
+            <Sider className={styles.colorthree}>Sider</Sider>
+            <Content className={styles.colortwo}>Content</Content>
+          </Layout>
+          <Footer className={styles.gutterbox}>Footer</Footer>
+        </Layout>
+        <br />
+        <Layout>
+          <Header className={styles.gutterbox}>Header</Header>
+          <Layout>
+            <Content className={styles.colortwo}>Content</Content>
+            <Sider className={styles.colorthree}>Sider</Sider>
+          </Layout>
+          <Footer className={styles.gutterbox}>Footer</Footer>
+        </Layout>
+        <br />
+        <Layout>
+          <Sider className={styles.colorfor}>Sider</Sider>
+          <Layout>
+            <Header className={styles.gutterbox}>Header</Header>
+            <Content className={styles.colortwo}>Content</Content>
+            <Footer className={styles.gutterbox}>Footer</Footer>
+          </Layout>
+        </Layout>
+      </div>
+    )
+  }
+}
+export default test1;
+// 典型的页面布局。
+
+************************以下是Less代码**********************************
+
+.gutterbox {
+  background: deepskyblue;
+  color: #ffffff;
+  height: 50px;
+}
+.colortwo{
+  background: #1890ff;
+  color: #ffffff;
+  height: 100px;
+}
+.colorthree{
+  background: #76c4ff;
+  color: #ffffff;
+  height: 100px;
+}
+.colorfor{
+  background: #76c4ff;
+  color: #ffffff;
+  height: 200px;
+}
