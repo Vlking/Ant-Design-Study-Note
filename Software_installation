@@ -12,7 +12,7 @@ Node.js安装
 1、配置步骤：next->next->全选->next->UserVim(the ubiquitous text editor)as Git's default editor->Use Git from Git Bash only->Use the OpenSSL library->Checkout Windows-style,commit Unix-style line endings->Use MinTTY->选择第一个和第三个->finish->环境变量的系统变量path中添加 D:\Program Files\Git\cmd->检验打开cmd输入git
 
 -----------------------------------------------------------------------------------------------------
-
+########################################## Ant Design Pro 4.0#########################################
 安装antDesign：
 1、创建自己的文件夹
 2、在文件夹里点击鼠标右键：选择Git Bash Here
@@ -22,7 +22,12 @@ ant-design-pro
 npm install
 npm start
 
-########################################## Ant Design Pro 4.0#########################################
+########################################## Ant Design Pro 分支#########################################
+git clone --depth=1 https://github.com/ant-design/ant-design-pro.git my-project -b v2
+cd my-project
+npm install
+npm start
+########################################## Ant Design Pro 非官方模板#########################################
 1、安装git、npm、yarn等开发工具，设置yarn、npm的国内镜像以加速下载
 yarn config set registry https://registry.npm.taobao.org
 npm config set registry https://registry.npm.taobao.org 
