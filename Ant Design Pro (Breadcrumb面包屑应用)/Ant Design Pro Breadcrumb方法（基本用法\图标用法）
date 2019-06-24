@@ -1,0 +1,31 @@
+import React from 'react';
+import { Breadcrumb, Icon } from 'antd';
+
+class test1 extends React.Component{
+  render() {
+    return(
+      <Breadcrumb>
+        <div>基本用法：</div>
+        <Breadcrumb.Item>Home</Breadcrumb.Item>
+        <Breadcrumb.Item>
+          <a href="">Application Center</a>
+        </Breadcrumb.Item>
+        <Breadcrumb.Item>
+          <a href="">Application List</a>
+        </Breadcrumb.Item>
+        <Breadcrumb.Item>An Application</Breadcrumb.Item>
+        <div>图标用法：</div>
+        <Breadcrumb.Item href="">
+          <Icon type="home" />
+        </Breadcrumb.Item>
+        <Breadcrumb.Item href="">
+          <Icon type="user" />
+          <span>Application List</span>
+        </Breadcrumb.Item>
+        <Breadcrumb.Item>Application</Breadcrumb.Item>
+      </Breadcrumb>
+    )
+  }
+}
+export default test1;
+//最简单的用法。图标放在文字前面。
