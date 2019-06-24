@@ -1,0 +1,18 @@
+import React from 'react';
+import { Affix, Button } from 'antd';
+
+class test1 extends React.Component{
+  state = {
+    top: 10,
+    bottom: 10,
+  };
+  render() {
+    return(
+      <Affix offsetTop={120} onChange={affixed => console.log(affixed)}>
+        <Button>120px to affix top</Button>
+      </Affix>
+    )
+  }
+}
+export default test1;
+//可以获得是否固定的状态
