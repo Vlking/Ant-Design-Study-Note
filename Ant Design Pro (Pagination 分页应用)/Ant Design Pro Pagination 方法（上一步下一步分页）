@@ -1,0 +1,25 @@
+import React from 'react';
+import { Pagination } from 'antd';
+
+class test1 extends React.Component {
+  render() {
+
+    function itemRender(current, type, originalElement) {
+      if (type === 'prev') {
+        return <a>Previous</a>;
+      }
+      if (type === 'next') {
+        return <a>Next</a>;
+      }
+      return originalElement;
+    }
+
+    return (
+      <Pagination total={500} itemRender={itemRender} />
+    )
+  }
+}
+
+export default test1;
+//上一步和下一步
+// 修改上一步和下一步为文字链接
