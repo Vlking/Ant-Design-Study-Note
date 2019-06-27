@@ -1,0 +1,21 @@
+import React from 'react';
+import {  Pagination } from 'antd';
+
+class test1 extends React.Component {
+
+  render() {
+    return (
+      <div>
+        基础分页:
+      <Pagination defaultCurrent={1} total={50} />
+        更多分页：
+      <Pagination defaultCurrent={6} total={500} />
+        改变每页显示条目数：
+        <Pagination defaultCurrent={6} total={500} />
+      </div>
+    )
+  }
+}
+
+export default test1;
+//基础分页、更多分页、改变每页显示条目数
