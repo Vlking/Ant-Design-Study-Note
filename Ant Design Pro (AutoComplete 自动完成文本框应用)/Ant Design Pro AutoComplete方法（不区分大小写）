@@ -1,0 +1,24 @@
+import React from 'react';
+import { AutoComplete } from 'antd';
+
+const { TextArea } = Input;
+const dataSource = ['Burns Bay Road', 'Downing Street', 'Wall Street'];
+
+class test1 extends React.Component {
+  render() {
+    return (
+      <AutoComplete
+        style={{ width: 200 }}
+        dataSource={dataSource}
+        placeholder="try to type `b`"
+        filterOption={(inputValue, option) =>
+          option.props.children.toUpperCase().indexOf(inputValue.toUpperCase()) !== -1
+        }
+      />
+    )
+  }
+}
+
+export default test1;
+// 不区分大小写
+// 不区分大小写的 AutoComplete
