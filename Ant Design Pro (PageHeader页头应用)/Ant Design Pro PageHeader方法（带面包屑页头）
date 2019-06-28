@@ -1,0 +1,29 @@
+import React from 'react';
+import { PageHeader } from 'antd';
+
+const routes = [
+  {
+    path: 'index',
+    breadcrumbName: 'First-level Menu',
+  },
+  {
+    path: 'first',
+    breadcrumbName: 'Second-level Menu',
+  },
+  {
+    path: 'second',
+    breadcrumbName: 'Third-level Menu',
+  },
+];
+
+class test1 extends React.Component {
+  render() {
+    return (
+      <PageHeader title="Title" breadcrumb={{ routes }} />
+    )
+  }
+}
+
+export default test1;
+//带面包屑页头
+// 带面包屑页头，适合层级比较深的页面，让用户可以快速导航。
