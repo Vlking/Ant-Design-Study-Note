@@ -1,5 +1,5 @@
 import React from 'react';
-import { Checkbox, Row, Co } from 'antd';
+import { Checkbox, Row, Col } from 'antd';
 
 function onChange(checkedValues) {
   console.log('checked = ', checkedValues);
@@ -8,7 +8,7 @@ function onChange(checkedValues) {
 class test1 extends React.Component {
    render() {
     return (
-      <Checkbox.Group style={{ width: '100%' }} onChange={onChange}>
+      <Checkbox.Group style={{ width:'100%'}} onChange={onChange}>
         <Row>
           <Col span={8}>
             <Checkbox value="A">A</Checkbox>
