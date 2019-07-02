@@ -5,7 +5,6 @@ const { RangePicker } = DatePicker;
 
 class test1 extends React.Component {
   render() {
-    const { startValue, endValue, endOpen } = this.state;
     return (
       <div>
         <DatePicker
