@@ -1,5 +1,6 @@
 import React from 'react';
 import { Form, Select, InputNumber, Switch, Radio, Slider, Button, Upload, Icon, Rate, Checkbox, Row, Col, } from 'antd';
+import styles from './demo.less';
 
 const { Option } = Select;
 
@@ -150,7 +151,7 @@ class Demo extends React.Component {
         </Form.Item>
 
         <Form.Item label="Dragger">
-          <div className="dropbox">
+          <div className={styles.dropbox}>
             {getFieldDecorator('dragger', {
               valuePropName: 'fileList',
               getValueFromEvent: this.normFile,
@@ -179,3 +180,10 @@ const WrappedDemo = Form.create({ name: 'validate_other' })(Demo);
 export default WrappedDemo;
 //校验其他组件
 // 以上演示没有出现的表单控件对应的校验演示。
+
+*************************以下是less代码********************************
+
+#components-form-demo-validate-other .dropbox {
+  height: 180px;
+  line-height: 1.5;
+}
