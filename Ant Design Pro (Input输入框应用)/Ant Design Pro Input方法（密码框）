@@ -1,0 +1,13 @@
+import React from 'react';
+import { Input } from 'antd';
+
+class NumericInputDemo extends React.Component {
+  render() {
+    return (
+      <Input.Password placeholder="input password" />
+    );
+  }
+}
+
+export default NumericInputDemo;
+//密码框
