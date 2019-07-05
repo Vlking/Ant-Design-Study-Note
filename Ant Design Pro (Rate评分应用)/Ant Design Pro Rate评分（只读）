@@ -1,0 +1,13 @@
+import React from 'react';
+import { Rate } from 'antd';
+
+class Rater extends React.Component {
+  render() {
+    return (
+      <Rate disabled defaultValue={2} />
+    );
+  }
+}
+export default Rater;
+//只读
+// 只读，无法进行鼠标交互。
