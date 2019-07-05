@@ -1,0 +1,10 @@
+import React from 'react';
+import { Rate } from 'antd';
+
+function App() {
+  return (
+    <Rate />
+  );
+}
+export default App;
+//基本使用
