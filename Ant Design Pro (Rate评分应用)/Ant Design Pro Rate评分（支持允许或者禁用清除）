@@ -1,0 +1,29 @@
+import React from 'react';
+import { Rate } from 'antd';
+
+const desc = ['terrible', 'bad', 'normal', 'good', 'wonderful'];
+
+class Rater extends React.Component {
+  state = {
+    value: 3,
+  };
+
+  handleChange = value => {
+    this.setState({ value });
+  };
+
+  render() {
+    const { value } = this.state;
+    return (
+      <div>
+        <Rate defaultValue={3} /> allowClear: true
+        <br />
+        <Rate allowClear={false} defaultValue={3} /> allowClear: false
+      </div>
+    );
+  }
+}
+
+export default Rater;
+//清除
+// 支持允许或者禁用清除。
