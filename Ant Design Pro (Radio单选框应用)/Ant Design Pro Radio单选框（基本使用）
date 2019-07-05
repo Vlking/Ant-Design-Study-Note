@@ -1,0 +1,13 @@
+import React from 'react';
+import { Radio } from 'antd';
+
+class Rater extends React.Component {
+  render() {
+    return (
+      <Radio>Radio</Radio>
+    );
+  }
+}
+export default Rater;
+//基本
+// 最简单的用法。
