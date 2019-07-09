@@ -9,7 +9,15 @@ Node.js安装
 -----------------------------------------------------------------------------------------------------
 
 安装git管理：
-1、配置步骤：next->next->全选->next->UserVim(the ubiquitous text editor)as Git's default editor->Use Git from Git Bash only->Use the OpenSSL library->Checkout Windows-style,commit Unix-style line endings->Use MinTTY->选择第一个和第三个->finish->环境变量的系统变量path中添加 D:\Program Files\Git\cmd->检验打开cmd输入git
+1、配置步骤：next->next->全选->next->
+UserVim(the ubiquitous text editor)as Git's default editor
+->Use Git from Git Bash only
+->Use the OpenSSL library
+->Checkout Windows-style,commit Unix-style line endings
+->Use MinTTY
+->选择第一个和第三个
+->finish
+->环境变量的系统变量path中添加 D:\Program Files\Git\cmd->检验打开cmd输入git
 
 -----------------------------------------------------------------------------------------------------
 ########################################## Ant Design Pro 4.0#########################################
