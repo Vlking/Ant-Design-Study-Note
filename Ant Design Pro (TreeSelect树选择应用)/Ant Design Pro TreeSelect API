@@ -42,7 +42,7 @@ onSearch	                  文本框值变化时回调	                         
 onSelect	                  被选中时调用	                                                                               function(value, node, extra)	-
 onTreeExpand	              展示节点时调用	                                                                               function(expandedKeys)	-
 
-
+ 
 Tree 方法#
 名称	      描述
 blur()	    移除焦点
