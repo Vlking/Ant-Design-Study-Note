@@ -24,10 +24,11 @@ UserVim(the ubiquitous text editor)as Git's default editor
 安装antDesign：
 1、创建自己的文件夹
 2、在文件夹里点击鼠标右键：选择Git Bash Here
-yarn create umi
-选择
-ant-design-pro
+git clone https://github.com/ant-design/ant-design-pro.git
+cd　ant-design-pro
 npm install
+npm start
+npm run fetch:blocks
 npm start
 安装less：npm install -g less
 
