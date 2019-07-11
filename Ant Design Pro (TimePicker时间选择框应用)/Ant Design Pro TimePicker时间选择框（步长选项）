@@ -1,0 +1,13 @@
+import React from 'react';
+import { TimePicker } from 'antd';
+
+class Demo extends React.Component {
+  render() {
+    return (
+      <TimePicker minuteStep={15} secondStep={10} />
+      );
+  }
+}
+export default Demo;
+// 步长选项
+// 可以使用 hourStep minuteStep secondStep 按步长展示可选的时分秒。
