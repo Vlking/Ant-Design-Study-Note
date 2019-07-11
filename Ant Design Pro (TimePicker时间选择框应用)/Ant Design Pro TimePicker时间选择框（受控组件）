@@ -11,7 +11,9 @@ class Demo extends React.Component {
   };
 
   render() {
-    return <TimePicker value={this.state.value} onChange={this.onChange} />;
+    return (
+      <TimePicker value={this.state.value} onChange={this.onChange} />
+      );
   }
 }
 export default Demo;
