@@ -1,0 +1,21 @@
+import React from 'react';
+import { TimePicker,Button } from 'antd';
+
+function onChange(time, timeString) {
+  console.log(time, timeString);
+}
+
+class TimePickerAddonDemo extends React.Component {
+  render() {
+    return (
+      <div>
+        <TimePicker use12Hours onChange={onChange} />
+        <TimePicker use12Hours format="h:mm:ss A" onChange={onChange} />
+        <TimePicker use12Hours format="h:mm a" onChange={onChange} />
+      </div>
+    );
+  }
+}
+export default TimePickerAddonDemo;
+// 12 小时制
+// 12 小时制的时间选择器，默认的 format 为 h:mm:ss a。
