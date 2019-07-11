@@ -1,0 +1,13 @@
+import React from 'react';
+import { TimePicker } from 'antd';
+import moment from 'moment';
+class Demo extends React.Component {
+  render() {
+    return (
+      <TimePicker defaultValue={moment('12:08:23', 'HH:mm:ss')} disabled />
+      );
+  }
+}
+export default Demo;
+// 禁用
+// 禁用时间选择。
