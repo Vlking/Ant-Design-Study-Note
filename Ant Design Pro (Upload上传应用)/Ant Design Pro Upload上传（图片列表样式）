@@ -1,0 +1,72 @@
+import React from 'react';
+import { Upload, Button, Icon } from 'antd';
+import styles from './Demo.less';
+
+const fileList = [
+  {
+    uid: '-1',
+    name: 'xxx.png',
+    status: 'done',
+    url: 'https://zos.alipayobjects.com/rmsportal/jkjgkEfvpUPVyRjUImniVslZfWPnJuuZ.png',
+    thumbUrl: 'https://zos.alipayobjects.com/rmsportal/jkjgkEfvpUPVyRjUImniVslZfWPnJuuZ.png',
+  },
+  {
+    uid: '-2',
+    name: 'yyy.png',
+    status: 'done',
+    url: 'https://zos.alipayobjects.com/rmsportal/jkjgkEfvpUPVyRjUImniVslZfWPnJuuZ.png',
+    thumbUrl: 'https://zos.alipayobjects.com/rmsportal/jkjgkEfvpUPVyRjUImniVslZfWPnJuuZ.png',
+  },
+];
+
+const props = {
+  action: 'https://www.mocky.io/v2/5cc8019d300000980a055e76',
+  listType: 'picture',
+  defaultFileList: [...fileList],
+};
+
+const props2 = {
+  action: 'https://www.mocky.io/v2/5cc8019d300000980a055e76',
+  listType: 'picture',
+  defaultFileList: [...fileList],
+  className: 'upload_list_inline',
+};
+
+class MyUpload extends React.Component {
+  render() {
+    return (
+      <div>
+        <Upload {...props}>
+          <Button>
+            <Icon type="upload" /> Upload
+          </Button>
+        </Upload>
+        <br />
+        <br />
+        <Upload {...props2}>
+          <Button>
+            <Icon type="upload" /> Upload
+          </Button>
+        </Upload>
+      </div>
+    );
+  }
+}
+export default MyUpload;
+// 图片列表样式
+// 上传文件为图片，可展示本地缩略图。IE8/9 不支持浏览器本地缩略图展示（Ref），可以写 thumbUrl 属性来代替。
+
+************************************以下是Less代码**********************************************
+
+/* tile uploaded pictures */
+.upload_list_inline .ant_upload_list_item {
+  float: left;
+  width: 200px;
+  margin-right: 8px;
+}
+.upload_list_inline .ant_upload_animate_enter {
+  animation-name: uploadAnimateInlineIn;
+}
+.upload_list_inline .ant_upload_animate_leave {
+  animation-name: uploadAnimateInlineOut;
+}
