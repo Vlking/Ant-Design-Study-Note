@@ -1,0 +1,23 @@
+import React from 'react';
+import { Badge, Icon } from 'antd';
+
+class Autoset extends React.Component {
+  render() {
+    return (
+      <div>
+        <Badge dot>
+          <Icon type="notification" />
+        </Badge>
+        <Badge count={0} dot>
+          <Icon type="notification" />
+        </Badge>
+        <Badge dot>
+          <a href="#">Link something</a>
+        </Badge>
+      </div>
+    );
+  }
+}
+export default Autoset;
+//讨嫌的小红点
+// 没有具体的数字。
