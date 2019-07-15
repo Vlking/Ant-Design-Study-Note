@@ -1,0 +1,23 @@
+import React from 'react';
+import { Badge, Icon } from 'antd';
+
+class Autoset extends React.Component {
+  render() {
+    return (
+      <div>
+        <Badge count={5}>
+          <a href="#" className="head-example" />
+        </Badge>
+        <Badge count={0} showZero>
+          <a href="#" className="head-example" />
+        </Badge>
+        <Badge count={<Icon type="clock-circle" style={{ color: '#f5222d' }} />}>
+          <a href="#" className="head-example" />
+        </Badge>
+      </div>
+    );
+  }
+}
+export default Autoset;
+//基本
+// 简单的徽章展示，当 count 为 0 时，默认不显示，但是可以使用 showZero 修改为显示。
