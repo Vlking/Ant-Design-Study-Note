@@ -1,0 +1,14 @@
+import React from 'react';
+import { Empty } from 'antd';
+
+class Demo extends React.Component {
+  render() {
+    return (
+      <Empty />
+    );
+  }
+}
+
+export default Demo;
+//基本
+// 简单的展示。
