@@ -1,0 +1,17 @@
+import React from 'react';
+import { Card } from 'antd';
+
+class PositionCarouselDemo extends React.Component {
+  render() {
+    return (
+      <Card style={{ width: 300 }}>
+        <p>Card content</p>
+        <p>Card content</p>
+        <p>Card content</p>
+      </Card>
+    );
+  }
+}
+export default PositionCarouselDemo;
+//简洁卡片
+// 只包含内容区域。
