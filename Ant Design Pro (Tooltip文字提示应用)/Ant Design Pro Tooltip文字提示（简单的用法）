@@ -1,0 +1,16 @@
+import React from 'react';
+import { Tooltip } from 'antd';
+
+class Demo extends React.Component {
+  render() {
+    return (
+      <Tooltip title="prompt text">
+        <span>Tooltip will show on mouse enter.</span>
+      </Tooltip>
+    );
+  }
+}
+
+export default Demo;
+// 基本
+// 最简单的用法。
