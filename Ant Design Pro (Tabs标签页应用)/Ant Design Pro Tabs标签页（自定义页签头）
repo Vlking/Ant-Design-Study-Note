@@ -28,7 +28,6 @@ class Demo extends React.Component {
           </TabPane>
         </Tabs>
       </StickyContainer>
-      </div>
     );
   }
 }
