@@ -1,10 +1,6 @@
 import React from 'react';
 import { Alert } from 'antd';
 
-const onClose = e => {
-  console.log(e, 'I was closed.');
-};
-
 class test1 extends React.Component{
   render() {
     return(
