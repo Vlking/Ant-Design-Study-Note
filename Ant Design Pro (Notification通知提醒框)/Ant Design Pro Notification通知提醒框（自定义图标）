@@ -1,0 +1,27 @@
+import React from 'react';
+import { Button, notification, Icon } from 'antd';
+
+const openNotification = () => {
+  notification.open({
+    message: 'Notification Title',
+    description:
+      'This is the content of the notification. This is the content of the notification. This is the content of the notification.',
+    icon: <Icon type="smile" style={{ color: '#108ee9' }} />,
+  });
+};
+
+
+class DrawerForm extends React.Component {
+  render() {
+    return (
+      <div>
+        <Button type="primary" onClick={openNotification}>
+          Open the notification box
+        </Button>
+      </div>
+    );
+  }
+}
+export default DrawerForm;
+//自定义图标
+// 图标可以被自定义。
