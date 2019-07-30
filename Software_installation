@@ -39,6 +39,16 @@ cd my-project
 npm install
 npm start
 安装less：npm install -g less
+######################################### Ant Design Pro 升级##########################################
+ant design pro升级：
+1、删除node_modules
+2、更改package.js里的版本号
+3、重新安装：npm install
+如果升级之后，开启服务器之后出现错误将执行以下语句：
+删除node_modules：rm -rf node_modules
+删除package-lock.json：rm package-lock.json
+清楚npm缓存：npm cache clear --force
+npm重新安装：npm install
 ########################################## Ant Design Pro 非官方模板#########################################
 1、安装git、npm、yarn等开发工具，设置yarn、npm的国内镜像以加速下载
 yarn config set registry https://registry.npm.taobao.org
