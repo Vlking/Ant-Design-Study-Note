@@ -36,6 +36,7 @@ npm start
 ########################################## Ant Design Pro 分支#########################################
 git clone --depth=1 https://github.com/ant-design/ant-design-pro.git my-project -b v2
 cd my-project
+更改package.js里的版本号
 npm install
 npm start
 安装less：npm install -g less
