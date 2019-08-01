@@ -1,0 +1,16 @@
+import React from 'react';
+import { Progress } from 'antd';
+
+class DrawerForm extends React.Component {
+  render() {
+    return (
+      <div>
+        <Progress type="circle" percent={75} format={percent => `${percent} Days`} />
+        <Progress type="circle" percent={100} format={() => 'Done'} />
+      </div>
+    );
+  }
+}
+export default DrawerForm;
+//自定义文字格式
+// format 属性指定格式。
