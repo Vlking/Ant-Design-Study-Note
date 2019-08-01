@@ -1,0 +1,22 @@
+import React from 'react';
+import { Skeleton } from 'antd';
+import styles from './Demo.less';
+
+class DrawerForm extends React.Component {
+  render() {
+    return (
+      <div className={styles.example}>
+        <Skeleton active />
+      </div>
+    );
+  }
+}
+export default DrawerForm;
+// 动画效果
+// 显示动画效果。
+
+#####################这里是LESS代码############################
+
+.example {
+  background: #2eabff;
+}
