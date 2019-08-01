@@ -1,0 +1,13 @@
+import React from 'react';
+import { Progress } from 'antd';
+
+class DrawerForm extends React.Component {
+  render() {
+    return (
+      <Progress type="dashboard" percent={75} />
+    );
+  }
+}
+export default DrawerForm;
+//仪表盘
+// 通过设置 type=dashboard，可以很方便地实现仪表盘样式的进度条。
