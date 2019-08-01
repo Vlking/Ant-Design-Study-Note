@@ -1,0 +1,13 @@
+import React from 'react';
+import { Spin } from 'antd';
+
+class DrawerForm extends React.Component {
+  render() {
+    return (
+      <Spin />
+    );
+  }
+}
+export default DrawerForm;
+//基本用法
+// 一个简单的 loading 状态。
