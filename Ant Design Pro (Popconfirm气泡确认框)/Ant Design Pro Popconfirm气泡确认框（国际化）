@@ -1,0 +1,15 @@
+import React from 'react';
+import { Popconfirm } from 'antd';
+
+class DrawerForm extends React.Component {
+  render() {
+    return (
+      <Popconfirm title="Are you sure？" okText="Yes" cancelText="No">
+        <a href="#">Delete</a>
+      </Popconfirm>
+    );
+  }
+}
+export default DrawerForm;
+//国际化
+// 使用 okText 和 cancelText 自定义按钮文字。
