@@ -1,0 +1,17 @@
+import React from 'react';
+import { Spin } from 'antd';
+
+class DrawerForm extends React.Component {
+  render() {
+    return (
+      <div>
+        <Spin size="small" />
+        <Spin />
+        <Spin size="large" />
+      </div>
+    );
+  }
+}
+export default DrawerForm;
+// 各种大小
+// 小的用于文本加载，默认用于卡片容器级加载，大的用于页面级加载。
