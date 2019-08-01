@@ -1,0 +1,22 @@
+import React from 'react';
+import { Skeleton } from 'antd';
+import styles from './Demo.less';
+
+class DrawerForm extends React.Component {
+  render() {
+    return (
+      <div className={styles.example}>
+        <Skeleton />
+      </div>
+    );
+  }
+}
+export default DrawerForm;
+// 基本
+// 最简单的占位效果。
+
+
+#######################以下是Less代码#################################
+.example {
+  background: #2eabff;
+}
