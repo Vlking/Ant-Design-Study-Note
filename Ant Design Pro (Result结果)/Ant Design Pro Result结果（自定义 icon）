@@ -1,0 +1,17 @@
+import React from 'react';
+import { Result, Icon, Button } from 'antd';
+
+class DrawerForm extends React.Component {
+  render() {
+    return (
+      <Result
+        icon={<Icon type="smile" theme="twoTone" />}
+        title="Great, we have done all the operations!"
+        extra={<Button type="primary">Next</Button>}
+      />
+    );
+  }
+}
+export default DrawerForm;
+//自定义 icon
+// 自定义 icon。
