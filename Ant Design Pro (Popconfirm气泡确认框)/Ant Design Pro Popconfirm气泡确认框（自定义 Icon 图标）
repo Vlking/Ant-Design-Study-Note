@@ -1,0 +1,18 @@
+import React from 'react';
+import { Popconfirm, Icon } from 'antd';
+
+class DrawerForm extends React.Component {
+  render() {
+    return (
+      <Popconfirm
+        title="Are you sure？"
+        icon={<Icon type="question-circle-o" style={{ color: 'red' }} />}
+      >
+        <a href="#">Delete</a>
+      </Popconfirm>
+    );
+  }
+}
+export default DrawerForm;
+//自定义 Icon 图标
+// 使用 icon 自定义提示 icon。
