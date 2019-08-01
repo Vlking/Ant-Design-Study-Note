@@ -1,0 +1,15 @@
+import React from 'react';
+import { Spin, Icon } from 'antd';
+
+const antIcon = <Icon type="loading" style={{ fontSize: 24 }} spin />;
+
+class DrawerForm extends React.Component {
+  render() {
+    return (
+      <Spin indicator={antIcon} />
+    );
+  }
+}
+export default DrawerForm;
+//自定义指示符
+// 使用自定义指示符。
