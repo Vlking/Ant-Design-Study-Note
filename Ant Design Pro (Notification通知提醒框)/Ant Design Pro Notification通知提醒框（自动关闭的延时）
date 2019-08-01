@@ -1,0 +1,25 @@
+import React from 'react';
+import { Button, notification } from 'antd';
+
+const openNotification = () => {
+  const args = {
+    message: 'Notification Title',
+    description:
+      'I will never close automatically. I will be close automatically. I will never close automatically.',
+    duration: 5,
+  };
+  notification.open(args);
+};
+
+class DrawerForm extends React.Component {
+  render() {
+    return (
+      <Button type="primary" onClick={openNotification}>
+        Open the notification box
+      </Button>
+    );
+  }
+}
+export default DrawerForm;
+//自动关闭的延时
+// 自定义通知框自动关闭的延时，默认4.5s，取消自动关闭只要将该值设为 0 即可。
