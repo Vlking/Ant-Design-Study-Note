@@ -1,0 +1,19 @@
+import React from 'react';
+import { Divider } from 'antd';
+
+class DrawerForm extends React.Component {
+  render() {
+    return (
+      <div>
+        Text
+        <Divider type="vertical" />
+        <a href="#">Link</a>
+        <Divider type="vertical" />
+        <a href="#">Link</a>
+      </div>
+    );
+  }
+}
+export default DrawerForm;
+// 垂直分割线
+// 使用 type="vertical" 设置为行内的垂直分割线。
