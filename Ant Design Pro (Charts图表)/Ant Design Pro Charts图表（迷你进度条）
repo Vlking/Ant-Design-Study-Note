@@ -1,0 +1,17 @@
+import {Layout} from 'antd';
+import { MiniProgress } from '../../components/Charts';
+
+class App extends React.Component {
+  render() {
+    return (
+      <div>
+        <Layout style={{background: '#FFFFFF'}}>
+          <MiniProgress percent={78} strokeWidth={8} target={80} />
+        </Layout>
+      </div>
+    );
+  }
+}
+
+export default App;
+// 迷你进度条
