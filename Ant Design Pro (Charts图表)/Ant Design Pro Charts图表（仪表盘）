@@ -1,0 +1,18 @@
+import {Layout} from 'antd';
+import {Gauge} from '../../components/Charts';
+
+class App extends React.Component {
+  render() {
+    return (
+      <div>
+        <Layout style={{background: '#FFFFFF'}}>
+          <Gauge title="核销率" height={164} percent={87} />
+        </Layout>
+      </div>
+    );
+  }
+}
+
+export default App;
+// 仪表盘
+// 仪表盘是一种进度展示方式，可以更直观的展示当前的进展情况，通常也可表示占比。
