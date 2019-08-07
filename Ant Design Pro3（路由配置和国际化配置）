@@ -1,0 +1,19 @@
+1、配置路由：
+找到router.config.js进行编辑左侧路由菜单。例子：（注意：这里的name直接和国际化有直接关系，所以起名一定要想好）
+      {
+        name: 'demo',
+        icon: 'vertical-align-middle',
+        path: '/demo',
+        routes: [
+          {
+            path: '/demo/demo',
+            name: 'demotest',
+            component: './Demo/Demo',
+          },
+        ],
+      },
+2、国际化设置
+找到locales下的zh-CN.js里的menu.js
+在里面按照配置路由的name值进行编写。例子：（注意：如果你有其他国家语言就同样打开相应语言的js进行编写）
+'menu.demo': 'Demo',
+'menu.demo.demotest': 'DemoTest',
